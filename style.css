@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --primary-bg-- : white;
+    --secondary-bg-- : #2361CC;
+}
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-bg--);
+}
+
+.main {
+    width: 600px;
+    min-height: 600px;
+    background-color: var(--primary-bg--);
+    border-radius: 13px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tasks-container {
+   width: 80%;
+   height: 80%;
+   margin: 10px 5px;
+   padding: 10px;
+}
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.task-items{
+    list-style: none;
+    background-color: powderblue;
+    border: 1px solid black;
+    padding: 14px;
+    border-radius: 7px;
+    position: relative;
+    font-size: 17px;
+    transition: all 0.5s ease;
+}
+.task-items > img {
+    position: absolute;
+    padding: 6px;
+    height: 30px;
+    right: 12px;
+    bottom: 9px;
+    background-color: rgb(216, 27, 27);
+    border-radius: 4px;
+}
+
+.main h1 {
+    text-align: center;
+    padding-block: 10px;
+    font-size: 38px;
+}
+
+.user-input {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+form>input {
+    width: 350px;
+    padding: 8px 10px;
+    font-size: 19px;
+    border-radius: 6px;
+    border-color: var(--secondary-bg--);
+}
+form>input::placeholder {
+    color: black;
+}
+
+.primary-btn {
+    padding: 8px 15px;
+    font-size: 19px;
+    background-color: var(--secondary-bg--);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.pointer {
+    cursor: pointer;
+}
